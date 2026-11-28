@@ -1,15 +1,115 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Dim's Portfolio</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-	</head>
-	<body class="text-center bg-grey-350 p-10"></body>
-		<h1 class="text-blue-950 text-6xl font-black italic">Dim</h1>
-        <h1 class="text-black-800 text-2xl font-semibold underline">AKA the GOAT</h1>
-		<p class="text-gray-600">15 years old, a musician, tech expert and developer</p>
-        <h2 class="mt-8 text-2xl font-semibold">About me</h2>
-        <p class="pb-8">I am a passionate individual with a love for music, technology and cars.</p>
-        <img src="https://i1.sndcdn.com/artworks-46Iy8SxkMaxepPTL-u5icpA-t500x500.jpg" alt="" class="w-64 rounded-lg shadow-lg mx-auto" />
-	</body>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dim's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-950 selection:text-white">
+
+  <!-- Top Navigation -->
+  <nav class="sticky top-0 z-10 border-b border-slate-200/80 bg-slate-50/80 backdrop-blur">
+    <div class="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+      <a href="#" class="font-black italic text-blue-950">Dim</a>
+      <div class="flex gap-5 text-sm font-medium text-slate-600">
+        <a href="#about" class="transition hover:text-blue-950">About</a>
+        <a href="#projects" class="transition hover:text-blue-950">Projects</a>
+        <a href="#interests" class="transition hover:text-blue-950">Music & Cars</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="mx-auto max-w-3xl px-6 py-14">
+
+    <!-- Hero Section -->
+    <section class="text-center">
+      <img
+        src="https://i1.sndcdn.com/artworks-46Iy8SxkMaxepPTL-u5icpA-t500x500.jpg"
+        alt="Dim's artwork"
+        class="mx-auto mb-6 h-40 w-40 rounded-2xl object-cover shadow-lg ring-4 ring-white"
+      />
+      <h1 class="text-6xl font-black italic tracking-tight text-blue-950 sm:text-7xl">
+        Dim
+      </h1>
+      <p class="mt-2 text-xl font-bold text-slate-800 underline decoration-blue-600 decoration-2 underline-offset-4">
+        AKA the GOAT
+      </p>
+      <p class="mt-3 text-base font-medium text-slate-600">
+        15 years old &bull; Musician, tech expert, and developer
+      </p>
+
+      <!-- Action / Social Buttons -->
+      <div class="mt-6 flex justify-center gap-3">
+        <a href="#projects" class="rounded-lg bg-blue-950 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-900">
+          View Projects
+        </a>
+        <a href="https://github.com/the-dimpol-13" target="_blank" rel="noreferrer" class="rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-slate-400 hover:bg-slate-100">
+          GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="mt-16 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+      <h2 class="text-2xl font-bold text-blue-950">About me</h2>
+      <p class="mx-auto mt-3 max-w-xl leading-relaxed text-slate-600">
+        I am a passionate individual with a love for music, technology, and cars. Whether I'm building hardware &amp; software projects, arranging tracks, or diving into automotive specs, I love learning how things work from the inside out.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-14">
+      <h2 class="text-center text-2xl font-bold text-blue-950">Projects &amp; Builds</h2>
+      <div class="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
+          <span class="rounded-md bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-900">Software</span>
+          <h3 class="mt-3 text-lg font-bold text-slate-900">Portfolio  website</h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Repo of this project
+          </p>
+          <a href="https://github.com/the-dimpol-13/my-portfolio" target="_blank" rel="noreferrer" class="mt-4 inline-block text-sm font-semibold text-blue-900 hover:underline">
+            Check it out &rarr;
+          </a>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
+          <span class="rounded-md bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-900">Software</span>
+          <h3 class="mt-3 text-lg font-bold text-slate-900">HTML Calc</h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Another html project, that i started in order to practice for this one
+          </p>
+          <a href="https://github.com/the-dimpol-13/calc-html" target="_blank" rel="noreferrer" class="mt-4 inline-block text-sm font-semibold text-blue-900 hover:underline">
+            Check it out &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music & Cars -->
+    <section id="interests" class="mt-14">
+      <h2 class="text-center text-2xl font-bold text-blue-950">Music &amp; Garage</h2>
+      <div class="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900">Music</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            Playing instruments, arranging themes into custom rhythms, and experimenting with digital &amp; DIY audio gear.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900">Cars</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            Passionate about automotive engineering, classic mechanical setups, and motorsport performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+    &copy; 2026 Dim
+  </footer>
+
+</body>
 </html>
